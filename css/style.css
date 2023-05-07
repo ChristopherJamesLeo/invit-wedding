@@ -20,7 +20,20 @@ body {
     font-family: var(--global-primary-poppin-font);
 }
 
+body::-webkit-scrollbar {
+    width: 8px;
+}
 
+body::-webkit-scrollbar-thumb {
+
+    background-color: var(--global-primary-color);
+    /* border: 2px solid var(--global-secondary-gray-color); */
+    border-radius: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background: linear-gradient(var(--global-white-color),var(--global-primary-color));
+}
 /* Start Preloader */
 #preloader {
     width: 100%;
@@ -513,8 +526,8 @@ body {
 }
 .form_header h2 {
     color: var(--global-black-color);
-    font-family: var(--global-title-font);
-    font-size: 35px;
+    font-family: var(--global-secondary-playfair-font);
+    font-size: 40px;
 }
 .guest_book_form form .form-control {
     color: var(--global-text-light-gray-color);
@@ -594,3 +607,75 @@ footer {
     width: 100%;
 }
 /* End Footer Section */
+
+/* ---------------------------- */
+/* -----------Location Page---- */
+/* ---------------------------- */
+/* Start Sub banner section */
+.sub_banner {
+    height: 90vh;
+    display: grid;
+    place-items: center;    
+    background-image: url("../assets/imgs/banners/about_hero.jpg.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sub_banner .sub_banner_content  h1 {
+    color: var(--global-white-color);
+    font-family: var(--global-secondary-playfair-font);
+    font-size: 70px;
+}
+/* end Sub banner section */
+
+
+/* ---------------------------------- */
+/* ----------Contact Page------------ */
+/* ---------------------------------- */
+/* Start Contact Section */
+.contact_form_title h3 {
+    color: var(--global-color-black);
+    font-size: 35px;
+    font-family: var(--global-secondary-playfair-font);
+} 
+.contact_form_body .form-group .form-control {
+    padding: 15px;
+    font-size: 18px;
+    font-family: var(--global-primary-poppin-font);
+}
+.contact_form_body .form-group .form-control::placeholder {
+    font-weight: 300;
+}
+.contact_form_body .form-group .form-control:focus {
+    box-shadow: none;
+}
+.contact_form_body button {
+    padding: 15px 25px;
+    color: var(--global-primary-color) !important;
+    background-color: transparent;
+    border: 1px solid var(--global-primary-color) !important;
+    font-weight: 500;
+}
+.contact_address span.d-grid {
+    color: var(--global-content-text-gray-color);
+    width: 70px;
+    height: 70px;
+    place-items: center;
+    font-size: 25px;
+}
+
+.contact_add_group p {
+    color: var(--global-content-text-gray-color);
+    font-size: 18px;
+    font-family: var(--global-oswald-font);
+    font-weight: 400;
+    line-height: 0.8;
+}
+.contact_add_group .address {
+    color: var(--global-content-text-gray-color);
+    font-size: 18px;
+    font-family: var(--global-primary-poppin-font);
+    line-height: 0.8;
+
+}
+/* End Contact Section */
